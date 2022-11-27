@@ -1,3 +1,4 @@
+- name: Converts Markdown to HTML
 on:
   workflow_dispatch:
 - run: npm i markdown-to-html-cli -g
