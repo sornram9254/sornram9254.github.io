@@ -10,7 +10,7 @@ on:
       #- 'docs/images/**'
 
 jobs:
-  converttohpdf:
+  converttopdf:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
