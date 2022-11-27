@@ -1,5 +1,10 @@
 name: Converts Markdown to HTML
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
   workflow_dispatch:
 jobs:
   converttohtml:
