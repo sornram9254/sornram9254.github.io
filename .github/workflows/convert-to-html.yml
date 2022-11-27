@@ -1,5 +1,16 @@
-- name: Converts Markdown to HTML
+name: MarkDown to HTML
+# This workflow is triggered on pushes to the repository.
 on:
   workflow_dispatch:
-- run: npm i markdown-to-html-cli -g
-- run: markdown-to-html --source Resources.md --output Resources.html
+
+jobs:
+  converttohtml:
+    name: Build HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+          source: Resources.md
+          output: Resources.html
+          github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
+          favicon: data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>
