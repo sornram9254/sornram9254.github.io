@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: jaywcjlove/markdown-to-html-cli@main
         with:
+          run: "pwd"
           source: Resources.md
           output: Resources.html
           github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
