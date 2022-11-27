@@ -11,7 +11,8 @@ jobs:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
-      - run: ls -lah && ls -lah ../ && ls -lah ../../ && tree ../../
+      #- run: ls -lah && ls -lah ../ && ls -lah ../../ && tree ../../
+      - run: wget https://raw.githubusercontent.com/sornram9254/sornram9254.github.io/main/Resources.md -O Resources.md
       - uses: jaywcjlove/markdown-to-html-cli@main
         with:
           source: Resources.md
