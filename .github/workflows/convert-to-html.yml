@@ -1,4 +1,4 @@
-name: Docs to PDF
+name: MarkDown to HTML
 # This workflow is triggered on pushes to the repository.
 on:
   push:
