@@ -12,7 +12,7 @@ on:
 jobs:
   converttohtml:
     name: Build HTML
-    runs-on: Github
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: baileyjm02/markdown-to-pdf@v1.2.0
