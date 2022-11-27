@@ -6,9 +6,9 @@ jobs:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
       - uses: jaywcjlove/markdown-to-html-cli@main
         with:
-          run: "pwd"
           source: Resources.md
           output: Resources.html
           github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
