@@ -1,8 +1,6 @@
-name: MarkDown to HTML
-# This workflow is triggered on pushes to the repository.
+name: Converts Markdown to HTML
 on:
   workflow_dispatch:
-
 jobs:
   converttohtml:
     name: Build HTML
