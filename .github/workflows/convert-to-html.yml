@@ -6,7 +6,7 @@ jobs:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
-      - run: ls -lah ../ && pwd
+      - run: ls -lah ../../ && pwd
       #- uses: jaywcjlove/markdown-to-html-cli@main
       #  with:
       #    source: Resources.md
