@@ -13,7 +13,19 @@
       <nav class="navigation">
         <a href="/">Resources</a>
       </nav>
-      <div class="about">Hello World!</div>
+      <hr/>
+      <!-- ----------------------------------------- -->
+<div id="readme"></div>
+<script>
+  fetch('https://raw.githubusercontent.com/sornram9254/sornram9254/main/README.md')
+    .then(response => response.text())
+    .then(markdown => {
+      const converter = new showdown.Converter();
+      document.getElementById('readme').innerHTML = converter.makeHtml(markdown);
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+      <!-- ----------------------------------------- -->
     </div>
   </body>
 </html>
